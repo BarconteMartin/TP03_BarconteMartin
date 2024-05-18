@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/form-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Programacion Visual</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>Formulario de Datos</h1>
+        <form>
+            <label for="dni"><b>DNI:</b></label>
+            <input id="dni" type="number" required placeholder="Ingrese el DNI en número" name="dni"><br>
+            <label for="nombres"><b>Nombres:</b></label>
+            <input id="nombres" type="text" required placeholder="Ingrese sus nombres" name="nombres"><br>
+            <label for="apellidos"><b>Apellidos:</b></label>
+            <input id="apellidos" type="text" required placeholder="Ingrese sus apellidos" name="apellidos"><br>
+            <label for="fechaNacimiento"><b>Fecha de Nacimiento:</b></label>
+            <input id="fechaNacimiento" type="date" required placeholder="Ingrese su nacimiento" name="fechaNacimiento"><br>
+            <br>
+            <label for="genero"><b>Género:</b></label>
+			<div id="genero">
+			    <label for="generoM">Masculino:</label>
+			    <input id="generoM" type="radio" required value="Masculino" name="genero">
+			    <label for="generoF">Femenino:</label>
+			    <input id="generoF" type="radio" required value="Femenino" name="genero">
+			    <label for="generoX">Otro:</label>
+			    <input id="generoX" type="radio" required value="X" name="genero">
+			</div>
+            <label for="correoElectronico"><b>Correo Electrónico:</b></label>
+            <input id="correoElectronico" type="email" name="correoElectronico" placeholder="Ingrese su email" required><br>
+            <label for="domicilio"><b>Domicilio:</b></label>
+            <input id="domicilio" type="text" placeholder="Ingrese el domicilio" name="domicilio" required><br>
+            <label for="provincia"><b>Provincia:</b></label>
+            <select id="provincia" name="provincia" required>
+                <option value="Jujuy">Jujuy</option>
+                <option value="Salta" selected>Salta</option>
+                <option value="Tucuman">Tucumán</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Misiones">Misiones</option>
+            </select><br>
+            <label for="celular"><b>Teléfono Celular:</b></label>
+            <input id="celular" type="number" placeholder="Ingrese el número de celular" name="celular" required><br>
+            <br>
+            <label for="categoriasInteres"><b>Categorías de Interés:</b></label>
+			<div id="categoriasInteres">
+			    <label for="interesesF">Futbol:</label>
+			    <input id="interesesF" type="checkbox" name="intereses">
+			    <label for="interesesT">Turismo:</label>
+			    <input id="interesesT" type="checkbox" name="intereses">
+			    <label for="interesesG">Gastronomía:></label>
+			    <input id="interesesG" type="checkbox" name="intereses">
+			</div>
+            <label for="sugerencia"><b>Sugerencias:</b></label><br>
+            <textarea id="sugerencia" placeholder="Ingrese Comentarios" name="sugerencia" rows="8" cols="40"></textarea><br>
+            <label for="password"><b>Contraseña:</b></label>
+            <input id="password" type="password" required placeholder="Ingrese la contraseña" name="password" maxlength="10" minlength="4"><br>
+            <label for="passwordDenuevo"><b>Contraseña Nuevamente:</b></label>
+            <input id="passwordDenuevo" type="password" required placeholder="Ingrese la contraseña nuevamente" name="passwordDenuevo" maxlength="10" minlength="4"><br>
+            <label for="t&c"><b>Acepto los términos y Condiciones:</b><input id="t&c" type="checkbox" required name="t&c"></label><br>
+            <label for="informacionRelativa"><b>Acepto recibir información relativa a la empresa:</b><input id="informacionRelativa" type="checkbox" name="InfRel"></label>
+            <br>
+            <input type="button" value="Cancelar">
+            <input type="submit" value="Guardar">
+        </form>
+    </main>
+    <footer>
+        <p>Informacion de Contacto Y Redes Sociales (UNJu)</p>
+        <p>Correo Oficial: virtual@unju.edu.ar</p>
+        <p>Facebook: <a href="https://www.facebook.com/unjuvirtual/" target="_blank">Unju Virtual</a></p>
+        <p>LinkedIN: <a href="https://ar.linkedin.com/company/unjuvirtual" target="_blank">Unju Virtual</a></p>
+        <p>Pagina Escuela de Minas: <a href="https://escmi.unju.edu.ar" target="_blank">EDM</a></p>
+        <p><a href="/images/Dog.png" target="_blank">Easter Egg</a></p>
+    </footer>
+</body>
+</html>

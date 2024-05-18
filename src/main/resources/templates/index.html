@@ -2,90 +2,123 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Spring Framework: Introducción</title>
+    <title>Spring Framework Avanzado</title>
+    <link rel="stylesheet" href="/css/styles.css"></link>
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a la Introducción del Spring Framework</h1>
+        <h1>Spring Framework Profundo</h1>
+        <nav>
+            <ol>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Caracteristicas">Características</a></li>
+                    <li><a href="#Modulos">Módulos de Spring</a></li>
+                    <li><a href="#SpringBoot">Spring Boot</a></li>
+                    <li><a href="#Recursos">Recursos</a></li>
+                    <li><a href="/formulario">Formulario</a></li>
+            </ol>
+        </nav>
     </header>
+    <div class="container">
+        <main>
+            <section id="Inicio">
+                <h2>Introducción a Spring Framework</h2>
+                <p>
+                    Spring Framework es un poderoso framework de desarrollo para aplicaciones Java. 
+                    Con un fuerte soporte para la configuración basada tanto en XML como en anotaciones, 
+                    Spring permite a los desarrolladores crear aplicaciones de manera flexible y bien estructurada.
+                </p>
+            </section>
+            <section id="Caracteristicas">
+                <h2>Características de Spring</h2>
+                    <ul>
+                        <li>Inyección de dependencias</li>
+                        <li>Programación orientada a aspectos (AOP)</li>
+                        <li>Abstracción de acceso a datos</li>
+                        <li>Transacciones declarativas</li>
+                        <li>Modelo MVC para aplicaciones web</li>
+                        <li>Integración de microservicios con Spring Cloud</li>
+                    </ul>
 
-    <nav>
-        <ul>
-            <li><a href="#que-es-un-framework">¿Qué es un Framework?</a></li>
-            <li><a href="#porque-usar-frameworks">¿Por qué usar Frameworks?</a></li>
-            <li><a href="#spring-framework">Spring Framework</a></li>
-        </ul>
-    </nav>
+            </section>
+			<section id="ComparacionFrameworks">
+			    <h2>Comparación entre Spring Framework y otro Framework</h2>
+			    <table>
+			        <thead>
+			            <tr>
+			                <th>Categorías</th>
+			                <th>Spring Framework</th>
+			                <th>Otro Framework</th>
+			            </tr>
+			        </thead>
+			        <tbody>
+			            <tr>
+			                <td>Sintaxis</td>
+			                <td>Clara y concisa</td>
+			                <td>Depende del framework</td>
+			            </tr>
+			            <tr>
+			                <td>Inyección de Dependencias</td>
+			                <td>Sí</td>
+			                <td>Depende del framework</td>
+			            </tr>
+			            <tr>
+			                <td>Soporte de Comunidad</td>
+			                <td>Gran comunidad y soporte activo</td>
+			                <td>Variable</td>
+			            </tr>
+			            <tr>
+			                <td>Integración con otras tecnologías</td>
+			                <td>Amplia integración con otras tecnologías de Spring</td>
+			                <td>Varía según el framework</td>
+			            </tr>
+			            <!-- Agrega más filas según sea necesario -->
+			        </tbody>
+			    </table>
+			</section>
+            <section id="Modulos">
+                <h2>Módulos de Spring</h2>
 
-    <main>
-        <section id="que-es-un-framework">
-            <h2>¿Qué es un Framework?</h2>
-            <h3>Definición</h3>
-            <p>Un framework es un patrón de diseño arquitectónico para definir un entorno de trabajo basado en un conjunto de conceptos, prácticas y criterios que permite diseñar la solución a un tipo específico de problemas similares, manteniendo el foco en la implementación de lógica de negocio.</p>
-            <h3>Patrón de Diseño Arquitectónico</h3>
-            <p>Es una solución reusable que conlleva un conjunto de componentes que interactúan para resolver un problema general de diseño dentro de un contexto particular.</p>
-            <ul>
-                <li>Proporciona una abstracción útil para construir sistemas software.</li>
-                <li>Plantillas abstractas aplicables en diferentes contextos.</li>
-            </ul>
-            <table border="1">
-                <tr>
-                    <th>Concepto</th>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>Abstracción</td>
-                    <td>Mantiene la representación de las características esenciales del diseño del software.</td>
-                </tr>
-                <tr>
-                    <td>Plantillas</td>
-                    <td>Crean de forma automática la arquitectura de la aplicación, separando las capas de forma transparente al programador.</td>
-                </tr>
-            </table>
-        </section>
+                    <ul>
+                        <li>Spring Core: El núcleo del framework</li>
+                        <li>Spring AOP: Soporte para aspectos</li>
+                        <li>Spring Data Access: Integración con JDBC y JPA</li>
+                        <li>Spring Web MVC: Framework para aplicaciones web</li>
+                        <li>Spring WebFlux: Programación reactiva en Spring</li>
+                    </ul>
 
-        <section id="porque-usar-frameworks">
-            <h2>¿Por qué usar Frameworks?</h2>
-            <h3>Ventajas</h3>
-            <p>Los frameworks ofrecen múltiples ventajas que facilitan el desarrollo de aplicaciones complejas:</p>
-            <ul>
-                <li>Facilitan la separación de capas.</li>
-                <li>Promueven la reutilización de código.</li>
-                <li>Facilitan el mantenimiento y la escalabilidad de las aplicaciones.</li>
-            </ul>
-            <h3>Abstracción de la Solución</h3>
-            <p>Los frameworks permiten una abstracción tanto de la complejidad del problema como de su solución, manteniendo el foco en las características esenciales del diseño del software.</p>
-        </section>
-
-        <section id="spring-framework">
-            <h2>Spring Framework</h2>
-            <h3>Introducción</h3>
-            <p>El Spring Framework es un framework de desarrollo open source para aplicaciones de la plataforma JAVA de gran envergadura.</p>
-            <h3>Características</h3>
-            <ul>
-                <li>Escrito en JAVA (multiplataforma).</li>
-                <li>Modular y estándar.</li>
-                <li>Facilita el mantenimiento y la escalabilidad.</li>
-                <li>Agiliza la codificación de aplicaciones, centrando el foco en la lógica de negocio.</li>
-            </ul>
-            <h3>Evolución</h3>
-            <p>Spring ha evolucionado para convertirse en el estándar de facto para el desarrollo de aplicaciones empresariales basadas en JAVA.</p>
-        </section>
+            </section>
+            <section id="SpringBoot">
+                <h2>Introducción a Spring Boot</h2>
+                <p>
+                    Spring Boot hace fácil la creación de aplicaciones Spring independientes basadas en Java que puedes correr 'de caja'.
+                    Simplifica drásticamente el desarrollo en Spring con una configuración inicial automática y funcionalidades integradas.
+                </p>
+            </section>
     </main>
+   <aside id="Recursos">
+    <h2>Recursos Adicionales</h2>
+    <figure>
+        <a href="https://spring.io/projects/spring-framework" target="_blank"><img src="/images/spring-framework-logo.png" alt="Spring Framework"></a>
+        <figcaption>Spring Framework</figcaption>
+    </figure>
+    <figure>
+        <a href="https://spring.io/projects/spring-boot" target="_blank"><img src="/images/spring-boot-logo.png" alt="Spring Boot"></a>
+        <figcaption>Spring Boot</figcaption>
+    </figure>
+    <figure>
+        <a href="https://start.spring.io" target="_blank"><img src="/images/spring-initializr-logo.png" alt="Spring Initializr"></a>
+        <figcaption>Spring Initializr</figcaption>
+    </figure>
+	</aside>
+   
 
-    <aside>
-        <h2>Recursos Adicionales</h2>
-        <a href="https://spring.io/">Sitio Oficial de Spring</a>
-        <img src="/images/programacion_visual.jpg" alt="Logo de Spring">
-    </aside>
-
+    </div>
     <footer>
-        <p>Contacto: <a href="mailto:contacto@ejemplo.com">barcontemartin12@gmail.com</a></p>
-        <p>Síguenos en:
-            <a href="https://facebook.com">Facebook</a> |
-            <a href="https://twitter.com">Twitter</a> |
-            <a href="https://linkedin.com">LinkedIn</a>
-        </p>
+        <p>Contacto y Redes Sociales</p>
+        <p>Correo Oficial: info@spring.io</p>
+        <p>GitHub: <a href="https://github.com/spring-projects" target="_blank">Proyectos Spring</a></p>
+        <p>Twitter: <a href="https://twitter.com/springcentral" target="_blank">Spring Central</a></p>
     </footer>
 </body>
 </html>

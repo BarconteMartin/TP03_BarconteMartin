@@ -4,12 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class IndexController {
+public class FormularioClienteController {
+	@GetMapping("/formulario")
 	
-	@GetMapping("/index")
-	
-	public String getIndex() {
+	public String getFormularioCliente() {
 		
-		return "form-cliente";
+		return "FormularioCliente";
 	}
 }
